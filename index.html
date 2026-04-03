@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,6 +16,12 @@
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        <span class="icon-sun">&#9788;</span>
+                        <span class="icon-moon">&#9790;</span>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -25,8 +33,8 @@
         </section>
 
         <section class="posts">
-            <article class="post-card">
-                <span class="tag">New</span>
+            <article class="post-card fade-in">
+                <span class="tag tag-new">New</span>
                 <h2><a href="post.html">My First Day Using GitHub</a></h2>
                 <p>What I learned about repos, commits, and pushing code to the web for the first time.</p>
                 <div class="post-meta">
@@ -35,8 +43,8 @@
                 </div>
             </article>
 
-            <article class="post-card">
-                <span class="tag">Tutorial</span>
+            <article class="post-card fade-in">
+                <span class="tag tag-tutorial">Tutorial</span>
                 <h2><a href="post.html">Getting Started with Python</a></h2>
                 <p>A beginner-friendly guide to writing your first Python program, covering variables, loops, and functions.</p>
                 <div class="post-meta">
@@ -45,8 +53,8 @@
                 </div>
             </article>
 
-            <article class="post-card">
-                <span class="tag">Opinion</span>
+            <article class="post-card fade-in">
+                <span class="tag tag-opinion">Opinion</span>
                 <h2><a href="post.html">Why Clean Code Matters</a></h2>
                 <p>Writing readable code isn't just about aesthetics — it saves time, reduces bugs, and makes teamwork easier.</p>
                 <div class="post-meta">
@@ -55,8 +63,8 @@
                 </div>
             </article>
 
-            <article class="post-card">
-                <span class="tag">Project</span>
+            <article class="post-card fade-in">
+                <span class="tag tag-project">Project</span>
                 <h2><a href="post.html">Building a Calculator in Python</a></h2>
                 <p>A walkthrough of building a simple calculator with input validation and automated tests.</p>
                 <div class="post-meta">
@@ -70,5 +78,7 @@
     <footer>
         <p>&copy; 2026 MyBlog. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

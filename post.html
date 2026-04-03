@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Getting Started with Python - MyBlog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="progress-bar" id="progressBar"></div>
+
     <header>
         <nav>
             <a href="index.html" class="logo">MyBlog</a>
@@ -14,14 +18,20 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        <span class="icon-sun">&#9788;</span>
+                        <span class="icon-moon">&#9790;</span>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <article class="post-full">
+        <article class="post-full fade-in">
             <a href="index.html" class="back-link">&larr; Back to all posts</a>
-            <span class="tag">Tutorial</span>
+            <span class="tag tag-tutorial">Tutorial</span>
             <h1>Getting Started with Python</h1>
             <div class="post-meta">
                 <span>April 3, 2026</span>
@@ -55,8 +65,12 @@ is_student = True</code></pre>
         </article>
     </main>
 
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
     <footer>
         <p>&copy; 2026 MyBlog. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
